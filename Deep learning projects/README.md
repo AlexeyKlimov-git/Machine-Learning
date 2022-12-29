@@ -1,6 +1,6 @@
 # CNN 3 classes classification using PyTorch and Cuda
-In this homework for my deep learning course from MIPT images with 3 categories of animals 
-(cats, dogs and wild cat) was classified.   
+In this homework for my deep learning course images with 3 categories of animals 
+(cats, dogs and wild cat) were classified.   
 To do that I used first simple fully connected neural network as baseline and after convolutional neural network to show dramatic 
 accuracy increasing. 
 Also some tests with number of convolutional layers, dropout, initialisation and optimizers were performed.
