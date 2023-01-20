@@ -1,0 +1,101 @@
+Age,Sex,Job,Housing,Saving accounts,Checking account,Credit amount,Duration,Purpose,Risk
+43,male,2,rent,little,little,2625,16,car,Unknown
+44,male,2,own,,,3485,20,car,Unknown
+42,male,2,free,,,10477,36,car,Unknown
+40,male,2,rent,,,1386,15,radio/TV,Unknown
+36,male,3,own,little,,1278,24,radio/TV,Unknown
+20,male,3,rent,little,little,1107,12,radio/TV,Unknown
+24,male,1,own,,little,3763,21,car,Unknown
+27,male,2,own,,moderate,3711,36,education,Unknown
+46,female,1,own,little,,3594,15,car,Unknown
+33,female,1,own,,moderate,3195,9,car,Unknown
+34,female,2,own,little,,4454,36,radio/TV,Unknown
+25,female,1,own,little,moderate,4736,24,furniture/equipment,Unknown
+25,female,2,own,,moderate,2991,30,radio/TV,Unknown
+28,male,2,own,rich,,2142,11,business,Unknown
+31,male,2,rent,little,little,3161,24,business,Unknown
+32,female,3,own,little,moderate,18424,48,vacation/others,Unknown
+32,male,2,own,moderate,,2848,10,car,Unknown
+68,male,3,own,little,little,14896,6,car,Unknown
+33,male,2,own,moderate,little,2359,24,furniture/equipment,Unknown
+39,male,3,rent,little,little,3345,24,furniture/equipment,Unknown
+28,female,2,own,little,,1817,18,furniture/equipment,Unknown
+37,male,3,own,quite rich,,12749,48,radio/TV,Unknown
+22,female,2,rent,little,little,1366,9,radio/TV,Unknown
+30,male,2,rent,little,moderate,2002,12,car,Unknown
+55,male,2,own,little,little,6872,24,furniture/equipment,Unknown
+46,male,2,own,little,little,697,12,car,Unknown
+21,female,2,rent,little,little,1049,18,furniture/equipment,Unknown
+39,male,2,free,little,little,10297,48,car,Unknown
+58,male,2,own,,,1867,30,radio/TV,Unknown
+43,male,1,own,little,little,1344,12,car,Unknown
+24,male,1,own,little,little,1747,24,furniture/equipment,Unknown
+22,female,2,own,little,moderate,1670,9,radio/TV,Unknown
+30,male,2,own,little,,1224,9,car,Unknown
+42,male,2,own,quite rich,,522,12,radio/TV,Unknown
+23,female,2,own,little,little,1498,12,radio/TV,Unknown
+30,male,3,own,moderate,moderate,1919,30,radio/TV,Unknown
+28,female,1,own,little,rich,745,9,radio/TV,Unknown
+30,male,3,rent,little,moderate,2063,6,radio/TV,Unknown
+42,male,2,free,little,moderate,6288,60,education,Unknown
+46,male,3,own,,,6842,24,car,Unknown
+45,male,3,own,,,3527,12,car,Unknown
+31,male,1,own,little,,1546,10,car,Unknown
+31,male,2,own,,,929,24,furniture/equipment,Unknown
+42,male,1,own,little,,1455,4,car,Unknown
+46,female,2,rent,little,little,1845,15,furniture/equipment,Unknown
+30,female,2,own,quite rich,moderate,8358,48,car,Unknown
+30,male,2,free,quite rich,little,3349,24,furniture/equipment,Unknown
+38,male,3,own,,,2859,12,car,Unknown
+43,male,1,own,little,,1533,18,furniture/equipment,Unknown
+31,male,2,own,moderate,,3621,24,radio/TV,Unknown
+40,male,0,own,little,moderate,3590,18,business,Unknown
+24,male,2,own,little,little,2145,36,business,Unknown
+28,female,2,rent,quite rich,moderate,4113,24,car,Unknown
+26,female,3,own,little,,10974,36,furniture/equipment,Unknown
+29,female,2,own,little,little,1893,12,car,Unknown
+57,female,3,rent,rich,little,1231,24,radio/TV,Unknown
+49,male,1,own,,rich,3656,30,radio/TV,Unknown
+37,male,1,own,little,moderate,1154,9,radio/TV,Unknown
+45,male,1,own,little,little,4006,28,car,Unknown
+30,male,2,free,moderate,moderate,3069,24,furniture/equipment,Unknown
+30,male,2,rent,little,,1740,6,radio/TV,Unknown
+47,male,2,own,little,moderate,2353,21,car,Unknown
+29,male,2,own,,,3556,15,car,Unknown
+35,male,2,own,quite rich,,2397,24,radio/TV,Unknown
+22,male,1,own,little,moderate,454,6,repairs,Unknown
+26,female,2,own,,moderate,1715,30,radio/TV,Unknown
+23,male,1,own,quite rich,moderate,2520,27,radio/TV,Unknown
+54,female,3,rent,little,,3568,15,radio/TV,Unknown
+29,male,2,rent,,,7166,42,radio/TV,Unknown
+40,male,1,own,little,little,3939,11,car,Unknown
+22,male,2,own,moderate,moderate,1514,15,repairs,Unknown
+43,male,1,own,little,,7393,24,car,Unknown
+29,female,0,rent,little,little,1193,24,car,Unknown
+36,male,2,rent,little,little,7297,60,business,Unknown
+33,female,2,own,little,,2831,30,radio/TV,Unknown
+57,female,1,own,quite rich,rich,1258,24,radio/TV,Unknown
+64,female,2,own,little,moderate,753,6,radio/TV,Unknown
+42,male,2,own,,moderate,2427,18,business,Unknown
+47,male,1,own,little,,2538,24,car,Unknown
+25,male,2,rent,moderate,moderate,1264,15,car,Unknown
+49,male,2,own,little,moderate,8386,30,furniture/equipment,Unknown
+33,male,3,rent,little,,4844,48,business,Unknown
+28,female,3,own,moderate,rich,2923,21,car,Unknown
+26,male,2,own,little,little,8229,36,car,Unknown
+30,male,1,own,little,,2028,24,furniture/equipment,Unknown
+25,female,2,rent,little,little,1433,15,furniture/equipment,Unknown
+33,male,2,own,little,rich,6289,42,business,Unknown
+64,female,2,own,moderate,,1409,13,radio/TV,Unknown
+29,male,3,free,little,little,6579,24,car,Unknown
+48,male,1,own,little,moderate,1743,24,radio/TV,Unknown
+37,male,1,own,,,3565,12,education,Unknown
+34,male,1,own,moderate,,1569,15,radio/TV,Unknown
+23,male,1,rent,,little,1936,18,radio/TV,Unknown
+30,male,3,own,little,little,3959,36,furniture/equipment,Unknown
+50,male,2,own,,,2390,12,car,Unknown
+31,female,1,own,little,,1736,12,furniture/equipment,Unknown
+40,male,3,own,little,little,3857,30,car,Unknown
+38,male,2,own,little,,804,12,radio/TV,Unknown
+23,male,2,free,little,little,1845,45,radio/TV,Unknown
+27,male,2,own,moderate,moderate,4576,45,car,Unknown
