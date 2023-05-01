@@ -1,0 +1,10 @@
+# Прямые зависимости локальной проверки; это не полный transitive lock.
+torch==2.14.0
+transformers==4.57.6
+numpy==2.5.3
+scikit-learn==1.7.2
+joblib==1.6.0
+fastapi==0.141.1
+uvicorn==0.53.0
+httpx==0.28.1
+pydantic==2.13.5

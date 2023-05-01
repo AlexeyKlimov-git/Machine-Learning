@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+artifacts/
+data/
+data_small/
+mlruns/
+mlflow.db*
+.env*
+local*.json
+*.dibate
