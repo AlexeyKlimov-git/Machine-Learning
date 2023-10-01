@@ -1,0 +1,7 @@
+# Прямые зависимости локальной проверки; это не полный transitive lock.
+torch==2.14.0
+torchvision==0.29.0
+numpy==2.4.6
+scikit-learn==1.9.1
+pillow==12.3.0
+mlflow==3.16.1

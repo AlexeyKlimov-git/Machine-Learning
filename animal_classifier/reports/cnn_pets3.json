@@ -1,0 +1,63 @@
+{
+  "report": {
+    "Abyssinian": {
+      "precision": 0.3875,
+      "recall": 0.3163265306122449,
+      "f1-score": 0.34831460674157305,
+      "support": 98
+    },
+    "beagle": {
+      "precision": 0.35185185185185186,
+      "recall": 0.76,
+      "f1-score": 0.4810126582278481,
+      "support": 100
+    },
+    "pug": {
+      "precision": 1,
+      "recall": 0.02,
+      "f1-score": 0.0392156862745098,
+      "support": 100
+    },
+    "accuracy": 0.36577181208053694,
+    "macro avg": {
+      "precision": 0.5797839506172839,
+      "recall": 0.3654421768707483,
+      "f1-score": 0.2895143170813103,
+      "support": 298
+    },
+    "weighted avg": {
+      "precision": 0.5810744469301516,
+      "recall": 0.36577181208053694,
+      "f1-score": 0.2891196842647985,
+      "support": 298
+    }
+  },
+  "confusion_matrix": [
+    [
+      31,
+      67,
+      0
+    ],
+    [
+      24,
+      76,
+      0
+    ],
+    [
+      25,
+      73,
+      2
+    ]
+  ],
+  "class_order": [
+    "Abyssinian",
+    "beagle",
+    "pug"
+  ],
+  "n": 298,
+  "images_per_second": 122.82897595273279,
+  "device": "cpu",
+  "batch_size": 16,
+  "timing": "warm; includes image loading and preprocessing",
+  "test_sha256": "0dcf2a00760a1555d5262bd85129b5f451dba2f58972269a0e56b821170a3cf5"
+}
