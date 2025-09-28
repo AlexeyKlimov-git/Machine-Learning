@@ -31,8 +31,13 @@ def simulate(prices, window=None, cost=0.0005):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--output", required=True)
+    p.add_argument("--window", type=int, default=20)
+    p.add_argument("--cost", type=float, default=0.0005)
+    p.add_argument("--seed", type=int, default=42)
     a = p.parse_args()
-    rng = random.Random(42)
+    if not 2 <= a.window <= 30 or not 0 <= a.cost <= 0.01:
+        p.error("window must be 2..30 and cost must be 0..0.01")
+    rng = random.Random(a.seed)
     prices = [100.0]
     for _ in range(600):
         prices.append(prices[-1] * math.exp(rng.gauss(0.0002, 0.01)))
@@ -40,10 +45,12 @@ def main():
     test = prices[370:]
     result = {
         "synthetic": True,
-        "seed": 42,
+        "seed": a.seed,
+        "window": a.window,
+        "cost": a.cost,
         "test_bars": len(test),
-        "buy_and_hold": simulate(test),
-        "moving_average_20": simulate(test, 20),
+        "buy_and_hold": simulate(test, cost=a.cost),
+        f"moving_average_{a.window}": simulate(test, a.window, cost=a.cost),
         "note": "plumbing demo, not evidence of trading alpha",
     }
     target = Path(a.output)

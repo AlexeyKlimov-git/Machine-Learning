@@ -33,6 +33,26 @@ def run(plan, destination, binaries=None, allow_local=False):
                 folder.mkdir()
                 artifact = folder / "metrics.json"
                 command = [sys.executable, "-m", "src.demo", "--output", str(artifact)]
+                demo_args = step.get("args", {})
+                if not isinstance(demo_args, dict) or not set(demo_args) <= {
+                    "window", "cost", "seed"
+                }:
+                    raise ValueError("Invalid demo arguments")
+                window = demo_args.get("window", 20)
+                cost = demo_args.get("cost", 0.0005)
+                seed = demo_args.get("seed", 42)
+                if (
+                    type(window) is not int
+                    or not 2 <= window <= 30
+                    or type(cost) not in (int, float)
+                    or not 0 <= cost <= 0.01
+                    or type(seed) is not int
+                    or not 0 <= seed <= 1_000_000
+                ):
+                    raise ValueError("Invalid demo parameters")
+                command += [
+                    "--window", str(window), "--cost", str(cost), "--seed", str(seed)
+                ]
             else:
                 command, artifact = build(step, folder, binaries or {})
             timeout = step.get("timeout", 120)

@@ -20,10 +20,11 @@ def main():
     p.add_argument("--model", default="google-bert/bert-base-uncased")
     p.add_argument("--epochs", type=int, default=3)
     p.add_argument("--batch", type=int, default=16)
+    p.add_argument("--lr", type=float, default=2e-5)
     p.add_argument("--seed", type=int, default=42)
     a = p.parse_args()
-    if a.epochs < 1 or a.batch < 1:
-        p.error("epochs and batch must be positive")
+    if a.epochs < 1 or a.batch < 1 or a.lr <= 0:
+        p.error("epochs, batch and lr must be positive")
     random.seed(a.seed)
     np.random.seed(a.seed)
     root, out = Path(a.data), Path(a.output)
@@ -69,8 +70,10 @@ def main():
         )
         revision = getattr(model.config, "_commit_hash", None)
         model.to(device)
-        opt = torch.optim.AdamW(model.parameters(), lr=2e-5)
+        opt = torch.optim.AdamW(model.parameters(), lr=a.lr)
         best = -1.0
+        best_epoch = None
+        history = []
         for epoch in range(a.epochs):
             model.train()
             indices = np.random.permutation(len(train))
@@ -104,9 +107,11 @@ def main():
                         labels[i] for i in model(**batch).logits.argmax(-1).tolist()
                     )
             score = f1_score(vy, pred, labels=labels, average="macro", zero_division=0)
+            history.append({"epoch": epoch + 1, "valid_macro_f1": float(score)})
             print({"epoch": epoch + 1, "valid_macro_f1": score}, flush=True)
             if score > best:
                 best = score
+                best_epoch = epoch + 1
                 model.save_pretrained(out)
                 tok.save_pretrained(out)
     (out / "training.json").write_text(
@@ -115,6 +120,8 @@ def main():
                 **vars(a),
                 "labels": labels,
                 "best_valid_macro_f1": best,
+                "best_epoch": best_epoch if a.backend == "bert" else None,
+                "history": history if a.backend == "bert" else None,
                 "model_revision": revision,
                 "data_sha256": {
                     s: hashlib.sha256((root / (s + ".csv")).read_bytes()).hexdigest()
