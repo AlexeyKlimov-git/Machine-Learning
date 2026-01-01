@@ -1,0 +1,27 @@
+{
+  "n": 16,
+  "tp": 12,
+  "fp": 8,
+  "fn": 21,
+  "field_micro_precision": 0.6,
+  "field_micro_recall": 0.36363636363636365,
+  "field_micro_f1": 0.4528301886792453,
+  "valid_response_rate": 0.625,
+  "record_exact_match": 0.1875,
+  "false_fill_rate": 0.06666666666666667,
+  "field_accuracy": {
+    "product": 0.375,
+    "amount": 0.625,
+    "category": 0.3125
+  },
+  "backend": "qwen",
+  "mode": "zero",
+  "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "p50_seconds": 0.6595202079988667,
+  "platform": "macOS-26.0.1-arm64-arm-64bit-Mach-O",
+  "device": "cpu",
+  "batch": 1,
+  "test_sha256": "70d90ca3693818f5a0c5e7ded29e34cdefcfa1a3c58a7872b616bad8e9675a15",
+  "prompt_sha256": "2470a3c09a931c29b17b89db83488a080c35e664fec98bcc45f06c903b5c00a3",
+  "data_note": "handwritten synthetic fixture; not production quality"
+}

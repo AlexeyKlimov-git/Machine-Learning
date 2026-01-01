@@ -1,0 +1,4 @@
+{"id":"dev-0","text":"Прошу заблокировать карту.","expected":{"product":"card","amount":null,"category":"request"}}
+{"id":"dev-1","text":"Когда поступит перевод 350 рублей?","expected":{"product":"transfer","amount":350,"category":"question"}}
+{"id":"dev-2","text":"Вклад не отображается, ошибка в приложении.","expected":{"product":"deposit","amount":null,"category":"problem"}}
+{"id":"dev-3","text":"Добрый день.","expected":{"product":null,"amount":null,"category":null}}

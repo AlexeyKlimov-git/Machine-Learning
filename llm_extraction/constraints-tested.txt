@@ -1,0 +1,4 @@
+# Прямые зависимости локальной проверки; это не полный transitive lock.
+torch==2.14.0
+transformers==4.57.6
+pydantic==2.13.5
