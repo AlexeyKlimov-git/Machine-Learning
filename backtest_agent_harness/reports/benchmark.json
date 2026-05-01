@@ -1,0 +1,9 @@
+{
+  "runs": 5,
+  "direct_median_seconds": 0.033612334009376355,
+  "harness_median_seconds": 0.03496962500503287,
+  "matching_results": 5,
+  "human_time_saved": null,
+  "agent_success_rate": null,
+  "scope": "synthetic deterministic demo; no LLM agent or private tools executed"
+}
